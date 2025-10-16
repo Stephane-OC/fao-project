@@ -1,5 +1,8 @@
 # 🌍 FAO Food Security Data Analysis (2013–2017)
 
+📗 [Open notebook on GitHub](https://github.com/Stephane-OC/fao-project/blob/main/Food_Security_Analysis_2013_2017.ipynb)  
+🌙 [Dark mode version (HTML)](https://stephane-oc.github.io/fao-project/ )
+
 ## 📖 Project Overview
 This project is part of a data analysis study on **global food availability and nutrition**, based on datasets provided by the **Food and Agriculture Organization of the United Nations (FAO)**.
 
