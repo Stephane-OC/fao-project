@@ -24,7 +24,8 @@ This repository focuses on the **historical part (2013–2017)**.
 - `aide_alimentaire.csv` → Food aid distributed (in tons)  
 - `sous_nutrition.csv` → Undernutrition indicators  
 - `Lexique_des_donnees.pdf` → Data dictionary (column definitions and units)  
-
+ax.set_title("Top 10 des pays avec la plus forte disponibilité alimentaire (kcal/personne/jour)",
+             color="#f1c40f", fontsize=13, pad=15)
 ---
 
 ## 🔧 Tools & Libraries
@@ -37,27 +38,33 @@ The analysis was performed in **Python** using the following libraries:
 ---
 
 ## 🚀 Key Steps in the Analysis
-1. **Data import & cleaning**
-   - Handling missing values (`NaN`)
-   - Renaming columns for consistency
-   - Harmonizing units (e.g., converting thousands → individuals, tons → kg)
 
-2. **Exploratory Data Analysis (EDA)**
-   - Dimensions of datasets
-   - Column types & distributions
-   - First insights and descriptive statistics
+1. **Libraries Import & Data Loading**  
+   - Importing required libraries (Pandas, NumPy, Matplotlib)  
+   - Loading Excel datasets (population, food availability, food aid, undernourishment)  
+   - Initial data cleaning and formatting  
 
-3. **Data transformation**
-   - Adjusting scales
-   - Normalizing values where necessary
+2. **Exploratory Data Analysis (EDA)**  
+   - Exploring dataset dimensions, columns, and missing values  
+   - Standardizing column names and units  
+   - Descriptive statistics and first insights for each dataset  
 
-4. **Visualization**
-   - Trends by country and year
-   - Comparisons between food aid, undernutrition, and population
+3. **Undernutrition Analysis**  
+   - Calculating the proportion of undernourished people by country and year  
+   - Estimating the theoretical number of people that could be fed  
+   - Analyzing the use of available food resources (human consumption, animal feed, losses, etc.)  
+   - Correlating average caloric intake with undernutrition rates  
+   - Identifying the most affected countries and major trends (2013–2018)  
 
-5. **Conclusions**
-   - Identifying potential gaps between availability and nutritional needs
-   - Highlighting key insights for food security
+4. **Continental Analysis**  
+   - Computing average undernutrition rates by continent  
+   - Analyzing the evolution of undernutrition between 2013 and 2018  
+   - Highlighting global disparities and key regions of concern  
+
+5. **Conclusion**  
+   - Summary of key findings  
+   - Identified inequalities in food distribution  
+   - Insights for improving global food security 
 
 ---
 
